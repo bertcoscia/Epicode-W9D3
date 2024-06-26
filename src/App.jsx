@@ -15,7 +15,7 @@ function App() {
       <Welcome claim="The best place to find your favourite books!" />
       <AllTheBooks /> */}
       {/* <SingleBook book={fantasy[0]} /> */}
-      <BookList genre={horror} />
+      <BookList genre={fantasy} />
     </div>
   );
 }
