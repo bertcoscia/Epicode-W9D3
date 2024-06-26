@@ -5,7 +5,7 @@ const BookList = props => (
   <Container>
     <Row className="gy-3 mb-3">
       {props.genre.map(book => (
-        <SingleBook book={book} />
+        <SingleBook key={book.asin} book={book} />
       ))}
     </Row>
   </Container>

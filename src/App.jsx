@@ -16,7 +16,6 @@ function App() {
       <AllTheBooks /> */}
       {/* <SingleBook book={fantasy[0]} /> */}
       <BookList genre={horror} />
-      <BookList genre={fantasy} />
     </div>
   );
 }
