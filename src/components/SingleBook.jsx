@@ -1,4 +1,4 @@
-import { Card } from "react-bootstrap";
+import { Card, Col } from "react-bootstrap";
 import React from "react";
 
 class SingleBook extends React.Component {
@@ -16,12 +16,15 @@ class SingleBook extends React.Component {
 
   render() {
     return (
-      <Card style={{ width: "18rem" }} className={this.state.isSelected ? "border-danger" : null}>
-        <Card.Img variant="top" src={this.props.book.img} onClick={this.handleClick} />
-        <Card.Body>
-          <Card.Title className="mb-3">{this.props.book.title}</Card.Title>
-        </Card.Body>
-      </Card>
+      <Col xs={12} md={4} xl={3}>
+        <Card style={{ width: "18rem" }} className={this.state.isSelected ? "border-danger" : null}>
+          <Card.Img variant="top" src={this.props.book.img} onClick={this.handleClick} />
+          <Card.Body>
+            <Card.Title className="mb-3">{this.props.book.title}</Card.Title>
+            <span className="rounded-pill px-3 py-2 bg-info">${this.props.book.price}</span>
+          </Card.Body>
+        </Card>
+      </Col>
     );
   }
 }

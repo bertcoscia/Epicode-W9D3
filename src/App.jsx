@@ -11,7 +11,8 @@ import horror from "./data/horror.json";
 function App() {
   return (
     <div className="App">
-      {/* <MyNav />
+      <MyNav />
+      {/*
       <Welcome claim="The best place to find your favourite books!" />
       <AllTheBooks /> */}
       {/* <SingleBook book={fantasy[0]} /> */}
