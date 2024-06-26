@@ -5,6 +5,8 @@ import Welcome from "./components/Welcome";
 import AllTheBooks from "./components/AllTheBooks";
 import SingleBook from "./components/SingleBook";
 import fantasy from "./data/fantasy.json";
+import BookList from "./components/BookList";
+import horror from "./data/horror.json";
 
 function App() {
   return (
@@ -12,7 +14,8 @@ function App() {
       {/* <MyNav />
       <Welcome claim="The best place to find your favourite books!" />
       <AllTheBooks /> */}
-      <SingleBook book={fantasy[0]} />
+      {/* <SingleBook book={fantasy[0]} /> */}
+      <BookList genre={horror} />
     </div>
   );
 }
