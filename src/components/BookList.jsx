@@ -10,7 +10,7 @@ import scifi from "../data/scifi.json";
 class BookList extends React.Component {
   state = {
     title: null,
-    genre: fantasy
+    genre: null
   };
 
   handleFieldChange = value => this.setState({ title: value });
@@ -54,7 +54,7 @@ class BookList extends React.Component {
               this.state.genre.map(book => <SingleBook key={book.asin} book={book} />)
             )
           ) : (
-            <p>Nessun libro disponibile</p>
+            <h2>Select a genre</h2>
           )}
         </Row>
       </Container>
